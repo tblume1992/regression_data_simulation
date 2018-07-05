@@ -39,12 +39,5 @@ class simulateData():
             X = np.column_stack((X,MC))
         return X, y, coef
 
-simulation = simulateData(n_features = 10, multicollinearity = 2, mc_correlation = 0.99)
-Xhat, yhat,coefhat = simulation.make_Data()
-
-
-
-import OccamsWindow as ow
-ow.OccamsWindow(yhat, Xhat, window = 6)
 
         
