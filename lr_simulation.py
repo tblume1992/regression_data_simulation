@@ -12,7 +12,7 @@ from sklearn.datasets import make_regression
 # Generate toy data.
 class simulateData():
     def __init__(self, n_samples=500, n_features=10, n_informative = 5,
-                 random_state=0, noise=2.0, bias=100.0, coef = True,
+                 random_state=None, noise=2.0, bias=100.0, coef = True,
                  multicollinearity = 0, mc_correlation = .95
                  ):
         self.n_samples= n_samples
